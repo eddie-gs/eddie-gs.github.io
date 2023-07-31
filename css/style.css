@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    font-family: 'VT323', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(#13323b, #37757a 10%, #559ea3 40%);
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+hr {
+    border: none;
+    display: block;
+    height: 2px;
+    margin: 0.5rem 0;
+}
+
+#navbar {
+        width: 100vw;
+        background: rgba(255, 255, 255, .15);
+        border-bottom: 1px solid #eee;
+        position: fixed;
+        top: 0;
+        padding: .50rem;
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-item {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        outline: none;     
+    }
+
+.navbar-item:is(:not(:last-child)) {
+    border-right: 1px #f2efed solid
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.fullscreen {
+    height: 100vh;
+}
+
+#home, #about, #skills, #projects, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 4rem;
+    color: #215659;
+    -webkit-text-stroke: #05202b .1px;
+}
+
+#home h2 {
+    font-size: 3rem;
+    color: #559ea3;
+    -webkit-text-stroke: #05202b .1px;
+}
+
+#about h3, #projects h3, #skills h3, #contact h3 {
+    font-size: 2rem;
+    color: #215659;
+    -webkit-text-stroke: #05202b .01px;
+    padding: 12px;
+}
+
+.about-paragraphs {
+    font-size: 20px;
+    text-align: center;
+    justify-content: left;
+    padding-left: 10vw;
+    padding-right: 5vw;
+}
+
+.skill-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.social-media-img {
+    width: 50px;
+}
+
+.color1 {color: #05202b;}
+.color2 {color: #13323b;}
+.color3 {color: #215659;}
+.color4 {color: #37757a;}
+.color5 {color: #559ea3;}
+/* PALETA DE COLORES */
